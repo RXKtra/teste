@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="dakota.png" class="logo"/></a>
+    </div>
+    <div class="login-container">
+        <div class="message-box">
+            <p>Para acessar essas informações, é necessário fazer login.</p>
+        </div>
+        <form id="loginForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Login" class="custom-button">
+        </form>
+        <div id="errorMessage" class="message-box" style="display:none; background-color: #f8d7da; color: #721c24;">
+            <p>Erro: Usuário ou senha incorretos.</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
